@@ -1,0 +1,88 @@
+1. NEWTON SECOND LAW
+
+=== algoritma ===
+catat massa benda dengan nilai 600,
+catat percepatan benda dengan nilai 2
+catat resultan gaya dengan nilai 0
+hitung massa benda dikali percepatan dengan nilai di atas
+catat perhitungan di atas sebagai resultan gaya
+=================
+
+=== pseudocode challenge ===
+STORE 'massa benda' with value 600
+STORE 'percepatan' with value 2
+STORE 'resultan gaya' with value 0
+CALCULATE 'masa' times 'percepatan'
+SET 'resultan gaya' with CALCULATION result
+============================
+
+
+
+2. TAHUN KABISAT
+
+=== algoritma ===
+catat tahun dengan angka apapun
+catat jenis tahun dengan string kosong
+apabila tahun dibagi empat sama dengan nol DAN tahun dibagi 100 tidak sama dengan nol
+ATAU
+apabila tahun dibagi empat sama dengan nol DAN tahun dibagi 100 sama dengan nol DAN tahun dibagi 400 sama dengan nol
+MAKA jenis tahun sama dengan kabisat
+apabila tidak MAKA jenis tahun sama dengan bukan kabisat
+=================
+
+=== pseudocode ===
+STORE 'tahun' with any value
+STORE 'jenis tahun' with value ''
+IF 'tahun' MOD 4 = 0 AND 'tahun' MOD 100 != 0 
+    OR 'tahun' MOD 4 = 0 AND 'tahun' MOD 100 = 0 AND 'tahun' MOD 400 = 0
+    THEN 'jenis tahun' = 'kabisat'
+ELSE 'jenis tahun' = 'bukan kabisat'
+==================
+
+
+
+3. LAUNDRY DAY
+
+=== algoritma ===
+catat 'jumlah laundry' dengan nilai 20
+selama 'jumlah laundry' lebih besar dari nol
+    kurangi 'jumlah laundry' dengan nilai 1
+pengulangan berakhir 
+cetak 'mesin cuci dinyalakan'
+=================
+
+=== pseudocode ===
+STORE 'jumlah laundry' with value 20
+WHILE 'jumlah laundry' > 0
+    SUBSTRACT 'jumlah laundry' by 1
+END WHILE 
+DISPLAY 'mesin cuci dinyalakan'
+==================
+
+
+
+4. PERIKSA KUKU 
+
+=== algoritma ===
+CATAT 'jumlah murid' dengan nilai 40
+CATAT 'kuku panjang' dengan nilai true atau false
+selama 'jumlah murid' lebih besar dari 0
+    jika 'kuku panjang' sama dengan true
+        cetak 'guru menghukum siswa/siswi tersebut'
+    jika 'kuku panjang' sama dengan false
+        cetak 'guru memuji siswa/siswi tersebut'
+    kurangi 'jumlah murid' dengan nilai 1
+pengulangan berakhir
+=================
+
+=== pseudocode ===
+STORE 'jumlah laundry' with value 40
+STORE 'kuku panjang' with value true or false
+WHILE 'jumlah murid' > 0
+    IF 'kuku panjang' = true
+        DISPLAY 'guru menghukum siswa/siswi tersebut'
+    IF 'kuku panjang' = false
+        DISPLAY 'guru memuji siswa/siswi tersebut'
+    SUBSTRACT 'jumlah murid' by 1
+END WHILE
+==================
