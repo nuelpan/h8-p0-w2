@@ -12,7 +12,7 @@ if (nama !== "") {
       console.log(
         "Halo " + peran + " " + nama + ", kamu akan membantu temanmu yang terluka"
       );
-    } else if (peran === " Penyihir") {
+    } else if (peran === "Penyihir") {
       console.log(
         "Halo " + peran + " " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!"
       );
