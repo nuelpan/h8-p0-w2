@@ -12,7 +12,9 @@ catat perhitungan di atas sebagai resultan gaya
 STORE 'massa benda' with value 600
 STORE 'percepatan' with value 2
 STORE 'resultan gaya' with value 0
+
 CALCULATE 'masa' times 'percepatan'
+
 SET 'resultan gaya' with CALCULATION result
 ============================
 
@@ -34,9 +36,13 @@ apabila tidak MAKA jenis tahun sama dengan bukan kabisat
 STORE 'tahun' with any value
 STORE 'jenis tahun' with value ''
 IF 'tahun' MOD 4 = 0 AND 'tahun' MOD 100 != 0 
-    OR 'tahun' MOD 4 = 0 AND 'tahun' MOD 100 = 0 AND 'tahun' MOD 400 = 0
-    THEN 'jenis tahun' = 'kabisat'
-ELSE 'jenis tahun' = 'bukan kabisat'
+    OR 
+    'tahun' MOD 4 = 0 AND 'tahun' MOD 100 = 0 AND 'tahun' MOD 400 = 0
+    THEN 
+    'jenis tahun' = 'kabisat'
+ELSE 
+    'jenis tahun' = 'bukan kabisat'
+END IF
 ==================
 
 
@@ -81,8 +87,9 @@ STORE 'kuku panjang' with value true or false
 WHILE 'jumlah murid' > 0
     IF 'kuku panjang' = true
         DISPLAY 'guru menghukum siswa/siswi tersebut'
-    IF 'kuku panjang' = false
+    ELSE IF 'kuku panjang' = false
         DISPLAY 'guru memuji siswa/siswi tersebut'
+    ENDIF
     SUBSTRACT 'jumlah murid' by 1
 END WHILE
 ==================
